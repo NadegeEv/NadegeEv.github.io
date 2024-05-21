@@ -1,0 +1,18 @@
+.time-line-container>div:last-child .education__time>.education__line {
+    display: none;
+}
+
+a { /*link style*/
+    display: inline-block;
+    color: #130102;
+    padding: 0px 0px;
+  }
+
+li { /* list syle */
+list-style-type: circle;
+padding: 0px 10px;
+}
+
+li li {
+list-style-type: square;
+}

@@ -1,0 +1,307 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I am a PhD student at <a href="">CEA</a> and <a href="">Mines Paris PSL</a> supervised by <a href="https://www.minesparis.psl.eu/Services/Annuaire/alexandrine-gesret"> Dr Alexandrine Gesret </a> at  Geosciences center, Mines Paris PSL, Fontainebleau, <a href="http://sochalapierre.free.fr/">Dr Pierre Sochala</a> at CEA, <a href="http://olemaitre.perso.math.cnrs.fr/">Dr Olivier Le Maître</a> at <a href="https://portail.polytechnique.edu/cmap/en">CNRS, CMAP, Polytechnique, IPP, Palaiseau</a>. <br>
+    Relevant topics include:
+    <ul>
+  <li> Bayesian inference </li>
+  <li> Surrogate models </li>
+  <li> Inverse problems </li>
+  <li> Geophysical applications </li>
+  </ul>
+  Please find my detailed resume as a pdf <a style="font-weight:bold" href="resume_Polette.pdf"> here</a>.
+</div>
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Work Experience</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="PhD student - From Nov. 2022, at CEA and Mines Paris PSL"
+      subtitle="Adaptive inverse methods for seismo-acoustic events identification"
+    >
+    <div style="font-size:small"> Keywords: Inverse problem, Bayesian inference, propagation of uncertainty, surrogate models, Monte-Carlo methods </br>
+    Supervised by Dr A. Gesret, Dr P. Sochala, Dr O. Le Maître
+    </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Research internship - From Apr. 2022 to Sep. 2022, at CEA"
+      subtitle="Seismo-acoustic tomography thanks to polynomial chaos surrogates"
+    >
+    <div style="font-size:small">
+    Supervised by Dr P. Sochala, Dr A. Gesret
+    </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Research internship - From Jan. 2021 to Jul. 2021, at CENAERO"
+      subtitle="Infill sampling criteria for multi-fidelities surrogate-based optimization"
+    >
+    <div style="font-size:small"> Supervised by Dr T. Benamara, Dr P. Beaucaire </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Research internship - From Jun. 2020 to Dec. 2020, at INRAE MIAT"
+      subtitle="Side chain positioning under Cryo-EM constraints"
+    >
+    <div style="font-size:small">
+    Supervised by Dr D. Allouche</div>
+    </TimeLineElement>
+  </div>
+
+
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="PhD student"
+      subtitle="From Nov. 2022, at CEA and Mines Paris PSL"
+    />
+
+    <TimeLineElement
+      title="Master degree in Mathematical Modeling"
+      subtitle="From Sep. 2021 to Sep. 2022, at Sorbonne Université, Paris, France"
+    >
+    <div style="font-size:small">
+      <a href=''>Master's website</a>
+    </div>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Engineering degree in Applied Mathematics and Computing"
+      subtitle="From Sep. 2018 to Sep. 2022, at Ecole des Ponts ParisTech, Marne-La-Vallée, France"
+    >
+    <div style="font-size:small">
+    Specialization: Modeling, Analysis, Simulation, Optimization
+    </div>
+    </TimeLineElement>
+    
+    <TimeLineElement
+      title="Preparatory classes for engineering schools"
+      subtitle="From Sep. 2016 to Sep. 2018, at Lycée Henri IV, Paris, France"
+    >
+    <div style="font-size:small">
+    Biology, Geology, Mathematics, Physics, Chemistry
+    </div>
+    </TimeLineElement>
+  </div>
+
+
+<!--
+<div class="mb-5">
+    <div class="text-3xl w-full font-bold">Talks</div>
+</div>
+<div class="time-line-container mb-10">
+    <TimeLineElement
+      title="ISBA2024 - Poster"
+      subtitle="Jul. 2024"
+    />
+    <TimeLineElement
+      title="Seminary at Mines - Talk"
+      subtitle="May 2024"
+    >
+    Seminary of the Geostatistics Team at Mines Fontainebleau
+    </TimeLineElement>
+    <TimeLineElement
+      title="PhD student's day (ED GRNE398) - Talk"
+      subtitle="Apr. 2024"
+    >
+      Talk for a wide audience, Best talk award
+    </TimeLineElement>
+    <TimeLineElement
+      title="PhD student's day (CEA) - Poster"
+      subtitle="Apr. 2024"
+    />
+    <TimeLineElement
+      title="ETICS2023 - PhD Talk"
+      subtitle="Oct. 2023"
+    />
+    <TimeLineElement
+      title="MCM2023 - Mini-Symposium Talk"
+      subtitle="Jun. 2023"
+    />
+    <TimeLineElement
+      title="MASCOTNUM2023 - Poster"
+      subtitle="Apr. 2023"
+    />
+    <TimeLineElement
+      title="Seminary at BRGM - Talk"
+      subtitle="Nov. 2022"
+    />
+  </div>
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Teaching</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Sampling methods for Bayesian inference"
+      subtitle="Apr. 2024"
+    >
+    1h, Seminary of Mines Geostatistics team
+    </TimeLineElement>
+    <TimeLineElement
+      title="Python practical courses"
+      subtitle="From Sep. 2023 to Jun. 2024 at Lycée Henri IV, Paris, France"
+    >
+      2h per week, for undergraduate students (Biology preparatory class), 12 students per group
+    </TimeLineElement>
+    <TimeLineElement
+      title="Introduction to data science"
+      subtitle="Apr.-Jun. 2023 and Jan.-Mar. 2024 at Ecole des Ponts ParisTech, Marne-La-Vallée, France"
+    >
+    6x2h30, 24 students 
+    </TimeLineElement>
+    <TimeLineElement
+      title="Interrogator in Mathematics"
+      subtitle="2018 at Lycée Henri IV, Paris, France"
+    >
+    10x1h, Biology preparatory class
+    </TimeLineElement>
+    <TimeLineElement
+      title="Private lessons"
+      subtitle="Since 2013"
+    >
+    on a regular basis, for middle school, high school and undergraduate students <\br>
+    With Groupe Réussite and Mosaïc association
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Community involvment</div>
+  </div>
+
+  <TimeLineElement
+      title="Formation about students with dyslexia"
+      subtitle="Apr. 2024"
+  >
+  MOOC to understand and adapt teaching
+  </TimeLineElement>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="PhD representative of the GRNE398 doctoral school"
+      subtitle="Since 2023"
+    />
+    <TimeLineElement
+      title="Elles Bougent and FIRST speaker"
+      subtitle="Since 2022"
+    >
+      Panels in high schools to promote engineering and science, particularly for young women
+    </TimeLineElement>
+    <TimeLineElement
+      title="KI's President (IT Club of École des Ponts)"
+      subtitle="From 2019 to 2020 at Ecole des Ponts ParisTech, Marne-La-Vallée, France"
+    >
+    Contact with the administration; organization of formations and events (including Hackathon KIRO); communication with the students
+    </TimeLineElement>
+    <TimeLineElement
+      title="Environnement's division of Dévelop'Ponts member, Fruits and veg-
+etables manager"
+      subtitle="From 2019 to 2020 at Ecole des Ponts ParisTech, Marne-La-Vallée, France"
+    >
+    Ecological projects (sorting, compost, food waste); Biological fruits and vegetables baskets sales (weekly); Management of the website
+    </TimeLineElement>
+    <TimeLineElement
+      title="Handimanagement label"
+      subtitle="2018"
+    >
+    Formation about the management adapted to the integration of disabled people
+    </TimeLineElement>
+  </div>
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">School projects</div>
+  </div>
+
+  <TimeLineElement
+      title="Projects during the last year of my master"
+      subtitle="2022"
+  >
+  <ul>
+    <li>Long time behavior of a structured neuron population</li>
+    <li>Study of a coupled model air-aerosol in the bronchi (FreeFem++)</li>
+    <li>Mean time filling of a vesicle: diffusion on a graph (Python)</li>
+  </ul>
+  </TimeLineElement>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Projects during my second year at Ecole des Ponts"
+      subtitle="2020"
+    >
+    <ul>
+      <li>Anomaly detection on load curves (Python)</li>
+      <li>Discretization of martingale optimal transport problems (Python)</li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Projects during my first year at Ecole des Ponts"
+    >
+    <ul>
+      <li>Influence of Phenol on biomethanization (R)</li>
+      <li>Optimal strategy of a board game (Python)</li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Oldest projects"
+      subtitle=""
+    >
+    <ul>
+      <li>2018 - Stabilization of the coastline by a biofilm</li>
+      <li>2015 - Olympiades de Mathématiques 1eS, (Mathematics competition in high
+school), regional first prize, Poitou-Charentes
+      </li>
+    </ul>
+    </TimeLineElement>
+  </div>
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>C++</li>
+    <li>Python</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+  </ul>
+-->
+</BaseLayout>
