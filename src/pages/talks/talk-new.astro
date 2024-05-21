@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+---
+
+<BaseLayout>
+  <main class="md:flex md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      <h1 class="title my-2 text-4xl font-bold">{"GRNE PhD student's day"}</h1>
+      {"Apr 5 2024"}
+      <br />
+      {
+        ["talk"] &&
+        ["talk"].map((tag) => (
+            <a href={`/blog/tag/${tag}`} class="badge badge-outline ml-2 no-underline">
+              {tag}
+            </a>
+          ))
+      }
+      <div class="divider my-2"></div>
+      <slot />
+      <div>
+      My doctoral school (<a style="font-weight:bold" href=https://ed398.sorbonne-universite.fr/fr/index.html > ED GRNE398</a>) organized PhD student's day. This is a wonderful opportunity to exchange with other students about our work, and for me, to discover a wide area of research subjects (from hydrogeology to paleontology).</br>
+I am proud to share that my talk was awarded as the best 2nd year PhD student talk. It was a pleasure to be able to break down the mathematical barrier to make my subject engaging and understandable for a wider audience.</br>
+
+You can find my slides <a style="font-weight:bold" href=/slides/JDD-GRNE.pdf>here</a>.</br>
+
+Thank you to Nadine Maatouk for the picture !
+</div>
+<img src="/GRNE-JDD.jpeg"
+     alt="Change of Measure Picture"
+     width="500"
+     style="display:block; margin-left: auto; margin-right: auto;" />
+    </article>
+  </main>
+  
+
+</BaseLayout>
