@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+---
+
+<BaseLayout>
+  <main class="md:flex md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      <h1 class="title my-2 text-4xl font-bold">{"ISBA2024 (Venice)"}</h1>
+      {"Apr 30, 2024"}
+      <br />
+      {
+        ["NEW"] &&
+        ["NEW"].map((tag) => (
+            <a href={`/blog/tag/${tag}`} class="badge badge-outline ml-2 no-underline">
+              {tag}
+            </a>
+          ))
+      }
+      <div class="divider my-2"></div>
+      <slot />
+      I am attending ISBA2024 conference in Venice !
+
+      <div>
+  </br>
+  A digital version of my poster "Hierarchical formulation for Karhunen–Loève parametrization in Bayesian Field inference" is available <a style="font-weight:bold" href="/poster/ISBA2024.pdf"> here </a> ! </br></br>
+
+<img src="/illus_poster.png"
+     alt="ISBA2024 picture"
+     width="500"
+     style="display:block; margin-left: auto; margin-right: auto;" />
+     
+    </article>
+  </main>
+  
+
+</BaseLayout>
