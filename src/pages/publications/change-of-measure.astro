@@ -11,14 +11,6 @@ import createSlug from "../lib/createSlug"
       <h1 class="title my-2 text-4xl font-bold">{"Change of Measure for Bayesian Field Inversion with Hierarchical Hyperparameters Sampling"}</h1>
       {"Apr 30, 2024"}
       <br />
-      {
-        ["NEW","preprint"] &&
-        ["NEW","preprint"].map((tag) => (
-            <a href={`/blog/tag/${tag}`} class="badge badge-outline ml-2 no-underline">
-              {tag}
-            </a>
-          ))
-      }
       <div class="divider my-2"></div>
       <slot />
       Preprint available online <a style="font-weight:bold" href="https://hal.science/cea-04551914"> here</a> !

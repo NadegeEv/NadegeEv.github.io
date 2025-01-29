@@ -11,14 +11,6 @@ import createSlug from "../lib/createSlug"
       <h1 class="title my-2 text-4xl font-bold">{"GRNE PhD student's day"}</h1>
       {"Apr 5 2024"}
       <br />
-      {
-        ["talk"] &&
-        ["talk"].map((tag) => (
-            <a href={`/blog/tag/${tag}`} class="badge badge-outline ml-2 no-underline">
-              {tag}
-            </a>
-          ))
-      }
       <div class="divider my-2"></div>
       <slot />
       <div>

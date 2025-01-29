@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+---
+
+<BaseLayout>
+  <main class="md:flex md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      <h1 class="title my-2 text-4xl font-bold">{"Change of Measure for Bayesian Field Inversion with Hierarchical Hyperparameters Sampling"}</h1>
+      {"Jan. 5th, 2024"}
+      <br />
+      <div class="divider my-2"></div>
+      <slot />
+      Preprint available online <a style="font-weight:bold" href="https://hal.science/cea-04551914"> here</a> !
+
+      <div>
+  </br>
+  Authors: Nadège Polette, Olivier Le Maître, Pierre Sochala, Alexandrine Gesret </br></br>
+Abstract:</br>
+This paper proposes an effective treatment of hyperparameters in the Bayesian inference of a scalar field from indirect observations. Obtaining the joint posterior distribution of the field and its hyperparameters is challenging. The infinite dimensionality of the field requires a finite parametrization that usually involves hyperparameters to reflect the limited prior knowledge. In the present work, we consider a Karhunen-Loève(KL) decomposition for the random field and hyperparameters to account for the lack of prior knowledge of its autocovariance function. The hyperparameters must be inferred. To efficiently sample jointly the KL coordinates of the field and the autocovariance hyperparameters, we introduce a change of measure to reformulate the joint posterior distribution into a hierarchical Bayesian form. The likelihood depends only onthe field's coordinates in a fixed KL basis, with a prior conditioned on the hyperparameters. We exploit this structure to derive an efficient Markov Chain Monte Carlo (MCMC) sampling scheme based on an adapted Metropolis-Hasting algorithm. We rely on surrogate models (Polynomial Chaos expansions) of the forward model predictions to further accelerate the MCMC sampling. A first application to a transient diffusionproblem shows that our method is consistent with other approaches based on a change of coordinates (Sraj et al., 2016). A second application to a seismic traveltime tomography highlights the importance of inferring the hyperparameters. A third application to a 2D anisotropic groundwater flow problem illustrates the method on a more complex geometry.
+</div>
+<img src="/field-2d.png"
+     alt="Change of Measure Picture"
+     width="500"
+     style="display:block; margin-left: auto; margin-right: auto;" />
+     
+    </article>
+  </main>
+  
+
+</BaseLayout>

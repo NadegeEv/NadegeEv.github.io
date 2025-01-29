@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+---
+
+<BaseLayout>
+  <main class="md:flex md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      <h1 class="title my-2 text-4xl font-bold">{"Promoting science and engineering"}</h1>
+      {"21-24 Jan. 2025"}
+      <br />
+      <div class="divider my-2"></div>
+      <slot />
+      <div>
+      Since 2022, my former math teacher organizes an event through the association <a fontstyle="font-weight:bold" href="https://www.ellesbougent.com/">"Elles bougent"</a> to promote science and engineering to high school girl students (2nde/Sophomore Year). During a roundtable discussion, all topics can be addressed from 'what is the daily routine of a researcher ?' to 'is it hard to study far away from your family ?'. <a fontstyle="font-weight:bold" href="https://www.sudouest.fr/charente-maritime/saintes/le-culot-c-est-bien-comment-le-lycee-palissy-de-saintes-pousse-les-filles-a-oser-les-metiers-de-la-science-22975021.php">[Here]</a> is an article from the regional newspaper (in French). </br>
+      <img src="/palissy_2025.jpg"
+     alt="Event Picture"
+     width="500"
+     style="display:block; margin-left: auto; margin-right: auto;" />
+     <figcaption class="figure-caption text-center">"Elles bougent" event at Lycée Bernard Palissy.</figcaption>
+      </br>
+      This year, I took the opportunity to also present scientific and engineering studies and careers to the younger high school students (3ème/Freshman Year). Among other things, we discussed the vision they had of a researcher or an engineer thanks to post-it brainstorming session (example on the picture).</br>
+      I would like to thank my high schools' administration and professors for letting me present these paths, and in particular Mrs. Coustaty (Lycée Bernard Palissy, Saintes) and Mr. Gerbier (Collège Agrippa d'Aubigné, Saintes) for the organization !
+     </div> 
+<img src="/agrippa_2025.jpg"
+     alt="Post-it Picture"
+     width="500"
+     style="display:block; margin-left: auto; margin-right: auto;" />
+    </article>
+  </main>
+  
+
+</BaseLayout>
